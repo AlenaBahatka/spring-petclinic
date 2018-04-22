@@ -81,7 +81,8 @@ class OwnerController {
 
         // allow parameterless GET request for /owners to return all records
         if (owner.getLastName() == null) {
-            owner.setLastName(""); // empty string signifies broadest possible search
+        	// empty string signifies broadest possible search
+            owner.setLastName(""); 
         }
 
         // find owners by last name
